@@ -8,42 +8,40 @@ $(function () {
 
 		
 Highcharts.chart('container', {
-    chart: {
-        type: 'bar',
-		                zoomType:'xy',
-                panning:true,
-				
-    },
+
     title: {
-        text: 'Oversikt poengsum'
+        text: 'Oversikt Poeng - kumulativ'
     },
-    xAxis: {
-        categories: ['Lag 1', 'Lag 2', 'Lag 3']
-    },
+
+
     yAxis: {
-        min: 0,
         title: {
-            text: 'Poeng'
+            text: 'Kumulativ poeng-score'
         }
     },
     legend: {
-        reversed: true
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
     },
+
     plotOptions: {
         series: {
-            stacking: 'normal'
+            pointStart: 2010
         }
     },
+
     series: [{
-        name: 'Runde 1',
-        data: [5, 3, 4]
+        name: 'lag 1',
+        data: [3, 5, 9, 14]
     }, {
-        name: 'Runde 2',
-        data: [2, 2, 3]
-    }, {
-        name: 'Runde 3',
-        data: [3, 4, 4]
+        name: 'lag 2',
+        data: [1, 2, 3, 4]
+    },  {
+        name: 'lag 3',
+        data: [2, 5, 8, 10]
     }]
+
 });
     });
 });
