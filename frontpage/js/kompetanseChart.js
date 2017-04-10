@@ -19,6 +19,11 @@ Highcharts.chart('container', {
             text: 'Kumulativ poeng-score'
         }
     },
+	    xAxis: {
+        title: {
+            text: 'Runde'
+        }
+    },
     legend: {
         layout: 'vertical',
         align: 'right',
@@ -27,7 +32,7 @@ Highcharts.chart('container', {
 
     plotOptions: {
         series: {
-            pointStart: 2010
+            pointStart: 1
         }
     },
 
