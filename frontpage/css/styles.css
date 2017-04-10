@@ -1,0 +1,334 @@
+
+
+.section{
+	text-align: center;
+}
+
+#my-nav{
+    position:fixed;
+    right: 20px;
+    top: 50%;
+    margin-top: -40px;
+}
+#my-nav li{
+    list-style-type:none;
+    font-size: 15px;
+    margin: 10px 0;
+    cursor:pointer;
+}
+#my-nav li:hover,
+#my-nav li.active{
+    color: rgba(217, 94, 0, 0.8);
+}
+
+
+#index {
+	background: url(../pics/bbq.jpg) no-repeat top fixed;
+	background-size: 100% 100%;
+}
+
+
+
+.navbar.navbar-default.navbar-fixed-top{
+    background: rgba(255, 255, 255, 0);
+    border: 0;
+}
+.navbar.shrink.navbar-default.navbar-fixed-top{
+    background: rgba(255, 255, 255, 1);
+    border: 0;
+    transition: background-color .5s ease 0s;
+}
+
+.navbar.navbar-default .navbar-text {
+  color: white;
+  font-weight: bold;
+}
+.navbar.navbar-default .navbar-nav > li > a {
+  color: white;
+  font-weight: bold;
+}
+.navbar.navbar-default .navbar-nav > li > a:hover,
+.navbar.navbar-default .navbar-nav > li > a:focus {
+  color: rgba(217, 94, 0, 1);
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.navbar.shrink.navbar-default .navbar-text {
+  color: gray;
+  font-weight: bold;
+}
+.navbar.shrink.navbar-default .navbar-nav > li > a {
+  color: gray;
+  font-weight: bold;
+}
+.navbar.shrink.navbar-default .navbar-nav > li > a:hover,
+.navbar.shrink.navbar-default .navbar-nav > li > a:focus {
+  color: rgba(217, 94, 0, 1);
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.navbar.navbar-default .navbar-brand {
+  padding-top: 0px;
+  margin-top: -15px;
+}
+.navbar.navbar-default .navbar-brand img {
+  width: 80px;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+  opacity: 0;
+   
+}
+
+ .navbar-brand.navbar-brand-centered {
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 250px;
+    text-align: center;
+  }
+  .navbar.navbar-default > .container .navbar-brand-centered,
+  .navbar.navbar-default > .container-fluid .navbar-brand-centered {
+    margin-left: -125px;
+  }
+  nav.shrink.navbar.navbar-default {
+    min-height: 35px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+      
+  }
+  nav.shrink.navbar.navbar-default .navbar-brand {
+    padding-top: 0;
+    margin-top: -10px;
+  }
+  nav.shrink.navbar.navbar-default .navbar-brand img {
+    height: 34px;
+    width: 80px;
+    transition: all 1s;
+  -moz-transition: all 1s; /* Firefox 4 */
+  -webkit-transition: all 1s; /* Safari and Chrome */
+  -o-transition: all 1s; /* Opera */
+  -webkit-filter: brightness(1) invert(0);
+  filter: brightness(1) invert(0);
+  opacity: 1;
+  }
+  nav.shrink.navbar.navbar-default .navbar-nav a {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 15px;
+  }
+  nav.shrink.navbar.navbar-default .navbar-toggle {
+    padding: 4px 5px;
+    margin: 8px 15px 8px 0;
+  }
+ 
+ div.image {
+   content:url(pics/grill.png);
+   	margin-left: auto;
+	margin-right: auto;
+    height: 10%;
+    width: 10%;
+}
+
+
+
+
+h1, .productinfo h3, #eksempelgraf, #index p{
+  color: white;
+  font-weight: bold;
+}
+
+#containerHS{
+
+	width: 100%; 
+	height: 300px; 
+	margin: 0 auto;
+}
+
+
+.frontpage {
+    background-color: rgba(0,0,0, 0.3); 
+	font-weight: bold;
+}
+
+ #image_main {
+	content:url(../pics/grill.png);
+	padding-top: 4%;
+    height: 10%;
+    width: 10%;
+
+}
+
+ #section1_text{
+    width: 500px;
+    padding-top: 25px;
+    margin-top: 25px;
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: bold;
+}
+
+.header_main:after{
+	
+	content:' ';
+    display:block;
+    border:1px solid #d0d0d0;
+    border-radius:1px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+.header_main{
+	color: white;
+	font-weight: bold;
+	font-size: 150%;
+}
+ h1:after{
+	
+	content:' ';
+    display:block;
+    border:1px solid rgba(255,255,255, 1);
+    border-radius:1px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    box-shadow:inset 0 1px 1px rgba(255,255,255, .05);
+    -webkit-box-shadow:inset 0 1px 1px rgba(255,255,255, .05);
+    -moz-box-shadow:inset 0 1px 1px rgba(255,255,255, .05);
+}
+
+/* Footer her */
+/* Footer her */
+/* Footer her */
+/* Footer her */
+/* Footer her */
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold sans-serif;
+
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+
+.footer-distributed .footer-center{
+	width: 35%;
+	
+}
+
+.footer-distributed .footer-center i{
+
+	color: #ffffff;
+
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	line-height:2;
+}
+
+
+
+/* Footer Right */
+
+
+
+#map {
+	width: 100%;
+	height: 400px;
+}
+
+
+
+#container{
+
+	height: 400px;
+	margin: 0 auto;
+
+	width: 50%;
+	
+}
+
+@media (max-width: 950px){
+	* {
+		width: 100%;
+	}
+	
+ #section1_text{
+    width: 100%;
+    padding-top: 25px;
+    margin-top: 25px;
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: bold;
+}
+	#map {
+	width: 100%;
+	height: 200px;
+}
+ div.image {
+   content:url(pics/grill.png);
+   	margin-left: auto;
+	margin-right: auto;
+    height: 10%;
+    width: 10%;
+}
+
+ #image_main {
+	content:url(../pics/grill.png);
+	padding-top: 4%;
+    height: 10%;
+    width: 10%;
+
+}
+
+}
