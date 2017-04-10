@@ -20,8 +20,11 @@ Highcharts.chart('container', {
         }
     },
 	    xAxis: {
+			allowDecimals: false,
+
         title: {
             text: 'Runde'
+			
         }
     },
     legend: {
