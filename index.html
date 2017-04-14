@@ -103,15 +103,21 @@
         </div><!-- slutt på medarbeidere-->
         
 		<div class="section" id="betting">
-					<div id="someDiv">
+			
+			<img src = "" id = "img"/>
+			
+			<span class="divBet" id="someDiv">
 				Skriv inn hvor mye deres lag ønsker å satse på vårt casino. Deretter trykker dere på knappen. 
 				Det er 50% sannsynlighet for å øke innsatsen med 50%, og tilsvarende 50% sannsynlighet for å redusere innsatsen med 50%
-			  </div>
+			</span>
 
 			  <br><br>
 
 			  <input id="someInput" type="text">
+			  
 			  <button id="betButton" onClick="returnResult()">Trykk her for å satse poeng</button>
+			  
+
 		</div>
 		
 		
@@ -148,16 +154,26 @@
         var nameElement = document.getElementById("someInput");
         var theName = nameElement.value;
         var odds = click()
+		
+		document.getElementById("someDiv").innerHTML = "estimerer...";
+		
 		if(odds==0.5){
-		document.getElementById("someDiv").innerHTML = 
-		"Gratulerer!! dere har vunnet "+theName*odds 
-		+" Poeng!! <br/><br/> Dere vil ikke kunne foreta nytt veddemål før dere tar kontakt med Jarl eller Marius "
+			textD = "Gratulerer!! dere har vunnet "+theName*odds 
+			+" Poeng!! <br/><br/> Dere vil ikke kunne foreta nytt veddemål før dere tar kontakt med Jarl eller Marius "
 		} else {
-		document.getElementById("someDiv").innerHTML = 
-		"Beklager, dere har tapt " +theName*odds +" Poeng :((((. <br/><br/> Dere vil ikke kunne foreta nytt veddemål før dere tar kontakt med Jarl eller Marius "
+			textD ="Beklager, dere har tapt " +theName*odds +" Poeng :((((. <br/><br/> Dere vil ikke kunne foreta nytt veddemål før dere tar kontakt med Jarl eller Marius "
 		}
 		
-		document.getElementById("betButton").setAttribute("disabled", "disabled");
+			setTimeout(function(){document.getElementById("someDiv").innerHTML = textD}, 3000);
+			
+			document.getElementById("img").src = "wheel.gif";
+			
+			setTimeout(function() {
+				document.getElementById("img").style.display="none";
+			}, 3000); 
+			
+			
+			document.getElementById("betButton").setAttribute("disabled", "disabled");
      }
 
 	var heads = 0;
@@ -172,7 +188,7 @@
 		}
 	};
 	
-
+	
  </script>	
 </body>
 </html>
