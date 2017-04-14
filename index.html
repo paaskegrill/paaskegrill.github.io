@@ -99,16 +99,19 @@
 			<p> her kommer grafer og resultater </p>
 			<div id="container"></div>
 			
-			<div id="pieChart"></div>
-	
-			<div id="barChart"></div>  
-	
-			<div id="lineChart"></div>
  
         </div><!-- slutt på medarbeidere-->
         
-		<div class="section" id="quiz">
-		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc3X6Jz_Sqxi9kbjlyVW7knN4S9oOEVxSYgJvovFiRU_Nh3ZQ/viewform?embedded=true" width=100% height=100% frameborder="0" marginheight="0" marginwidth="0">Laster inn ...</iframe>
+		<div class="section" id="betting">
+					<div id="someDiv">
+				Skriv inn hvor mye deres lag ønsker å satse på vårt casino. Deretter trykker dere på knappen. 
+				Det er 50% sannsynlighet for å øke innsatsen med 50%, og tilsvarende 50% sannsynlighet for å redusere innsatsen med 50%
+			  </div>
+
+			  <br><br>
+
+			  <input id="someInput" type="text">
+			  <button id="betButton" onClick="returnResult()">Trykk her for å satse poeng</button>
 		</div>
 		
 		
@@ -138,6 +141,38 @@
     </div><!-- slutt på fullpage-->
 	
 	<script src="dash_paske.js"></script> 
+	<script>
+
+      function returnResult()
+      {
+        var nameElement = document.getElementById("someInput");
+        var theName = nameElement.value;
+        var odds = click()
+		if(odds==0.5){
+		document.getElementById("someDiv").innerHTML = 
+		"Gratulerer!! dere har vunnet "+theName*odds 
+		+" Poeng!! <br/><br/> Dere vil ikke kunne foreta nytt veddemål før dere tar kontakt med Jarl eller Marius "
+		} else {
+		document.getElementById("someDiv").innerHTML = 
+		"Beklager, dere har tapt " +theName*odds +" Poeng :((((. <br/><br/> Dere vil ikke kunne foreta nytt veddemål før dere tar kontakt med Jarl eller Marius "
+		}
+		
+		document.getElementById("betButton").setAttribute("disabled", "disabled");
+     }
+
+	var heads = 0;
+	var tails = 0;
+
+	function click() {  
+		x = (Math.floor(Math.random() * 2) === 0);
+		if(x){
+			return(-0.5);
+		}else{
+			return(0.5);
+		}
+	};
 	
+
+ </script>	
 </body>
 </html>
