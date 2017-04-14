@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="frontpage/css/styles.css" type="text/css"/> <!-- main css file -->
     <script src="frontpage/js/aos.js"></script> 
 
-  
+  <script src="http://d3js.org/d3.v2.js"></script>
    
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVts1Gy0gdGWNHTwMNz0hzm-uBqUfyydQ&amp;callback=initMap"></script>
     <script src="frontpage/js/scroller.js"></script> 
@@ -98,6 +98,12 @@
         <div class="section fp-auto-height"  id="oversikt"> <!-- start på medarbeidere-->
 			<p> her kommer grafer og resultater </p>
 			<div id="container"></div>
+			
+			<div id="pieChart"></div>
+	
+			<div id="barChart"></div>  
+	
+			<div id="lineChart"></div>
  
         </div><!-- slutt på medarbeidere-->
         
@@ -130,5 +136,8 @@
             </footer>
         </div><!-- end footer -->
     </div><!-- slutt på fullpage-->
+	
+	<script src="dash_paske.js"></script> 
+	
 </body>
 </html>
