@@ -373,6 +373,9 @@ h1, .productinfo h3, #eksempelgraf, #index p{
 		height: 100px;
 
 	}
+	#someInput{
+		width: 50%;
+	}
 }
 
 .slice {
